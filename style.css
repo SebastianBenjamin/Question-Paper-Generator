@@ -1,0 +1,184 @@
+body{
+    font-family: verdana;
+    margin: 0;
+/* overflow: hidden;   */
+}
+h1.txt {
+margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            padding: 10px;
+            border-top: 7px outset;
+            border-image: linear-gradient(to left, #355c7d, #6c5b7b, #c06c84) 1;
+            border-right: 7px outset;
+            border-left: 7px outset;
+            border-bottom: 2px outset;
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(to left, #355c7d, #6c5b7b, #c06c84);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+        img{
+            height: 1%;
+            width: 5%;
+            border-radius: 50px;
+
+        }
+        }
+
+.divv{
+    background-color: white;
+    margin:0px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0 5px 0;
+   border-right: 7px outset;
+   border-left: 7px outset;
+   border-bottom: 7px outset;
+   border-image: linear-gradient(to left, #355c7d, #6c5b7b, #c06c84)1;
+    align-items: center;
+   
+    div{
+        margin: 10px;
+        display: flex;
+        gap:10px;
+        border: 0;
+        align-items: center;
+        label{
+            font-weight: bold;
+            background: linear-gradient(to left, #355c7d, #6c5b7b, #c06c84);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: medio;
+        }
+        input{
+            border: 1px solid black;
+            height:50px;
+            width: 100%;
+            border-radius: 10px ;
+            text-align: center;
+            border-image: linear-gradient(to left, #355c7d, #6c5b7b, #c06c84)1;
+        }
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+        input:focus{
+            outline: 0;
+        }
+         ::placeholder{
+            text-align: center;
+         }
+    }
+    #gen{
+        background-color: transparent;
+        border: 2px solid rgb(7, 165, 115);
+        font-weight: bold;
+        height: 50px;
+        color: black;
+        padding: 5px;
+        margin: 5px;
+        font-size: smaller;
+    }
+    #gen:hover{
+        background-color:  rgb(7, 165, 115);
+        color: white;
+      
+    }
+    #copy{
+        background-color: transparent;
+        border: 2px solid rgb(64, 91, 224);
+        font-weight: bold;
+        height: 50px;
+        color: black;
+        padding: 5px;
+        display: none;
+        font-size: smaller;
+        transition: 2s ease-out;
+    }
+    #copy:hover{
+        background-color: rgb(64, 91, 224);
+        color: white;
+    }
+    #copy:active{
+        transform: scale(10);
+        border-radius: 100px;
+       transition: 2s ease-out;
+        
+    }
+    #clr{
+        background-color: transparent;
+        border: 2px solid rgb(255, 0, 0);
+        font-weight: bold;
+        height: 50px;
+        color: black;
+        padding: 5px;
+        display: none;
+        margin: 10px 10px 10px 0;
+        font-size: smaller;
+    }
+    #clr:hover{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        
+    }
+    
+}
+#questions{
+    margin:10px;
+    padding: 10px 50px 10px 50px;
+    border: 1px solid black;
+    display: none;
+   
+    width: fit-content;
+    height: fit-content;
+    font-family: verdana;
+
+     
+}
+#print{
+    height:100%;
+    /* width: 100%; */
+    padding: 1.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:7px outset ;
+    border-image: linear-gradient(to left, #355c7d, #6c5b7b, #c06c84)1;
+    display: none;
+    overflow-y: auto;
+}
+
+#result{
+margin: 5px;
+border: 2px solid rgb(0, 0, 0);
+padding: 7px;
+text-align: center;
+font-size: smaller;
+display: none;
+}
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.custom-alert.show {
+    display: block;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Generator</title>
+    <link href='./style.css' rel='stylesheet'>
+    <link href='./letter-q.png' rel='icon'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+<body>
+<h1 class="txt"><img src="./letter-q.png">UESTION PAPER GENERATOR</h1>
+<div class="divv">
+    <div>
+        <input type="text"  id="hed" class="kk"  placeholder="Heading"> 
+        </div>
+    <div>
+        <input type="text"  id="shed" class="kk"  placeholder="Sub Heading"> 
+        </div>
+    <div>
+<label for="sci">SCIENCE</label> 
+<input type="number"  id="sci" class="kk"  placeholder="Enter no of questions"> 
+</div>
+
+<div>
+<label for="mat">MATHS</label> 
+<input type="number"  id="mat" class="kk"  placeholder="Enter no of questions "> 
+</div>
+
+<div>
+<label for="gk">GENERAL KNOWLEDGE</label>
+<input type="number"  id="gk" class="kk"  placeholder="Enter no of questions">  
+</div>
+
+<button onclick="start()" id="gen">GENERATE</button> 
+<button onclick="saveDiv('questions','Title')" id="copy">PRINT</button>
+<p id="result"></p>
+<button onclick="clr()" id="clr">CLEAR</button> 
+
+</div>
+<div id="customAlert" class="custom-alert">Questions Printed!</div>
+<div id="customAlert1" class="custom-alert">Questions Cleared!</div>
+
+<div id="print">
+
+
+<div id="questions">
+    
+</div>
+</div>
+<script src="./script.js"></script> 
+
+</body>
+
+</html>
